@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StØckify</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <div class="top-nav">
+            <div class="logo">StØckify</div>
+            <div class="user-actions">
+                <a href="#" id="login-btn">Log In</a>
+                <a href="#" id="signup-btn">Sign Up</a>
+                <a href="#" id="logout-btn">Log Out</a>
+                <a href="#" id="cart-btn">Cart (0)</a>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+            <button>Search</button>
+        </div>
+    </header>
+    
+    <!-- Category Navigation -->
+    <nav class="category-nav">
+        <ul class="category-list">
+            <li><a href="#" data-category="all" class="active">All Products</a></li>
+            <li><a href="#" data-category="tshirt">T-Shirts</a></li>
+            <li><a href="#" data-category="pants">Pants</a></li>
+            <li><a href="#" data-category="watch">Watches</a></li>
+            <li><a href="#" data-category="shoes">Shoes</a></li>
+            <li><a href="#" data-category="electronics">Electronics</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="section-title">Featured Products</h2>
+        
+        <div class="products-grid">
+            <!-- T-Shirts (5 items) -->
+            <div class="product-card" data-category="tshirt">
+                <div class="product-image">
+                    <img src="pictures/basiccottontshirt.png" alt="T-Shirt" onerror="this.src='sdasdadasd.png'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Basic Cotton T-Shirt</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(128)</span>
+                    </div>
+                    <div class="product-price">₱199</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="tshirt">
+                <div class="product-image">
+                    <img src="pictures/graphic print tshirt.jpg" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Graphic Print T-Shirt</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(87)</span>
+                    </div>
+                    <div class="product-price">₱249</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="tshirt">
+                <div class="product-image">
+                    <img src="pictures/polo shirt.webp" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Polo Shirt</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(156)</span>
+                    </div>
+                    <div class="product-price">₱299</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="tshirt">
+                <div class="product-image">
+                    <img src="pictures\vneck.webp" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">V-Neck T-Shirt</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="review-count">(42)</span>
+                    </div>
+                    <div class="product-price">₱229</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="tshirt">
+                <div class="product-image">
+                    <img src="pictures/oversize tshirt.webp" alt="T-Shirt" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Oversized T-Shirt</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(73)</span>
+                    </div>
+                    <div class="product-price">₱279</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Pants (5 items) -->
+            <div class="product-card" data-category="pants">
+                <div class="product-image">
+                    <img src="pictures/pants/slimfitjeans.webp" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Slim Fit Jeans</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(210)</span>
+                    </div>
+                    <div class="product-price">₱599</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="pants">
+                <div class="product-image">
+                    <img src="pictures/pants/cargopants.jpg" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Cargo Pants</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(98)</span>
+                    </div>
+                    <div class="product-price">₱499</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="pants">
+                <div class="product-image">
+                    <img src="pictures/pants/chinopants.jpg" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Chino Pants</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(145)</span>
+                    </div>
+                    <div class="product-price">₱549</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="pants">
+                <div class="product-image">
+                    <img src="pictures/pants/joggerpants.webp" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Jogger Pants</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="review-count">(67)</span>
+                    </div>
+                    <div class="product-price">₱449</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="pants">
+                <div class="product-image">
+                    <img src="pictures/pants/formaltrouser.webp" alt="Pants" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Formal Trousers</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(112)</span>
+                    </div>
+                    <div class="product-price">₱699</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Watches (5 items) -->
+            <div class="product-card" data-category="watch">
+                <div class="product-image">
+                    <img src="pictures/watch/digitalsportswatch.jpeg" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Digital Sports Watch</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(189)</span>
+                    </div>
+                    <div class="product-price">₱899</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="watch">
+                <div class="product-image">
+                    <img src="pictures/watch/classicleatherwatch.webp" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Classic Leather Watch</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(124)</span>
+                    </div>
+                    <div class="product-price">₱1,299</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="watch">
+                <div class="product-image">
+                    <img src="pictures/watch/smartwatch.webp" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Smart Watch</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(256)</span>
+                    </div>
+                    <div class="product-price">₱2,499</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="watch">
+                <div class="product-image">
+                    <img src="pictures/watch/minimalistwatch.jpg" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Minimalist Watch</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="review-count">(58)</span>
+                    </div>
+                    <div class="product-price">₱799</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="watch">
+                <div class="product-image">
+                    <img src="pictures/watch/luxurywatch.webp" alt="Watch" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Luxury Chronograph</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(178)</span>
+                    </div>
+                    <div class="product-price">₱3,999</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Shoes (5 items) -->
+            <div class="product-card" data-category="shoes">
+                <div class="product-image">
+                    <img src="pictures/shoes/runningshoes.avif" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Running Shoes</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(245)</span>
+                    </div>
+                    <div class="product-price">₱1,299</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="shoes">
+                <div class="product-image">
+                    <img src="pictures/shoes/casualshoes.avif" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Casual Sneakers</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(132)</span>
+                    </div>
+                    <div class="product-price">₱999</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="shoes">
+                <div class="product-image">
+                    <img src="pictures/shoes/formalshoes.webp" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Formal Shoes</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(187)</span>
+                    </div>
+                    <div class="product-price">₱1,499</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="shoes">
+                <div class="product-image">
+                    <img src="pictures/shoes/sandals.jpg" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Sandals</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★☆☆</span>
+                        <span class="review-count">(76)</span>
+                    </div>
+                    <div class="product-price">₱599</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="shoes">
+                <div class="product-image">
+                    <img src="pictures/shoes/basketballshoes.jpg" alt="Shoes" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Basketball Shoes</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(154)</span>
+                    </div>
+                    <div class="product-price">₱1,799</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Electronics (5 items) -->
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="pictures/electronics/earpubs.webp" alt="Electronics" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Wireless Earbuds</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(312)</span>
+                    </div>
+                    <div class="product-price">₱1,599</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="pictures/electronics/speaker.webp" alt="Electronics" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Bluetooth Speaker</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(178)</span>
+                    </div>
+                    <div class="product-price">₱2,199</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="pictures/electronics/power bank.webp" alt="Electronics" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Power Bank</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(267)</span>
+                    </div>
+                    <div class="product-price">₱899</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="pictures/electronics/smartphone.jpg" alt="Electronics" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Smartphone</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(421)</span>
+                    </div>
+                    <div class="product-price">₱12,999</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <div class="product-card" data-category="electronics">
+                <div class="product-image">
+                    <img src="pictures/electronics/tablet.avif" alt="Electronics" onerror="this.src='https://via.placeholder.com/200'">
+                    <button class="favorite-btn"><i class="far fa-heart"></i></button>
+                </div>
+                <div class="product-info">
+                    <div class="product-name">Tablet</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(198)</span>
+                    </div>
+                    <div class="product-price">₱8,499</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sell Product Button -->
+    <a href="#" class="sell-product-btn" id="sell-product-btn">Sell Product</a>
+    
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-login">&times;</button>
+            <h2 class="modal-title">Log In</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-login">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Signup Modal -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-signup">&times;</button>
+            <h2 class="modal-title">Sign Up</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-signup">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Sell Product Modal -->
+    <div class="modal" id="sell-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-sell">&times;</button>
+            <h2 class="modal-title">Sell Your Product</h2>
+            <form id="sell-form">
+                <div class="form-group">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-category">Category</label>
+                    <select id="product-category" required>
+                        <option value="">Select Category</option>
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="pants">Pants</option>
+                        <option value="watch">Watch</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="product-price">Price (₱)</label>
+                    <input type="number" id="product-price" required>
+                </div>
+                <div class="form-group">
+                    <label for="product-description">Description</label>
+                    <textarea id="product-description" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="product-image">Product Image</label>
+                    <input type="file" id="product-image" accept="image/*" required>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-sell">Cancel</button>
+                    <button type="submit" class="btn btn-primary">List Product</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-cart">&times;</button>
+            <h2 class="modal-title">Your Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty</p>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="continue-shopping">Continue Shopping</button>
+                <button type="button" class="btn btn-primary" id="checkout" disabled>Checkout</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Review Modal -->
+    <div class="modal" id="review-modal">
+        <div class="modal-content">
+            <button class="close-btn" id="close-review">&times;</button>
+            <h2 class="modal-title">Leave a Review</h2>
+            <form id="review-form">
+                <div class="form-group">
+                    <label>Your Rating</label>
+                    <div class="rating-stars">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                        <input type="hidden" id="review-rating" value="0" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review-comment">Review</label>
+                    <textarea id="review-comment" rows="4" required></textarea>
+                </div>
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" id="cancel-review">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
